@@ -11,7 +11,13 @@ public class TasksApplication {
 
 		TaskDto taskDto = new TaskDto((long)1,"asdasd", "dzsdz");
 
-		SpringApplication.run(TasksApplication.class, args);
+		Long id = taskDto.getId();
+		String title = taskDto.getTitle();
+		String content = taskDto.getContent();
+
+		System.out.println(id + " " + title + " " + content);
+
+		//SpringApplication.run(TasksApplication.class, args);
 	}
 
 
